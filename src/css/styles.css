@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Fira Sans', sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    height:100%;
+}
+#map {
+    width: 100vw; 
+    height: 100vh;
+}
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.modal {
+    width: 378px;
+    height: 460px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 100;
+    top: 0px;
+    border-radius: 8px;
+    display: none;
+}
+
+.modal__header {
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    background-color: #FF9976 ;
+    padding: 14px;
+    border-radius: 10px 10px 0px 0px;
+    cursor: move;
+}
+
+.modal__main {
+    position: relative;
+    height: 470px;
+    padding: 17px;
+}
+
+.modal__header-text {
+    width: 90%;
+    overflow: hidden;
+    line-height: 2;
+    font-size: 12px;
+    font-weight: 500;
+    /* letter-spacing: 0.025em; */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 2px;
+}
+
+.modal__input,
+.modal__input,
+.modal__textarea {
+    width: 270px;
+    width: 100%;
+    height: 26px;
+    font-size: 13px;
+    color:#aeaeae;
+    outline: none;
+    border: none;
+    padding: 13px 13px;
+    margin-bottom: 14px;
+    border: 1px solid #aeaeae;
+    border-radius: 13px;
+}
+
+.modal__textarea {
+    height: 100px;
+    resize: none;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.save__btn {
+    display: inline-block;
+    padding: 10px 17px;
+    color: #ffffff;
+    background-color: #EF8B6B;
+    float: right;
+    text-decoration: none;
+    border-radius: 10px;
+    border: none;
+}
+
+.btn-close {
+    width: 15px;
+    position: absolute;
+    right: 15px;
+    top: 16px;
+    cursor: pointer;
+}
+
+.modal__form-label {
+    text-transform: uppercase;
+    color: #EF8B6B;
+    font-size: 16px;
+    letter-spacing: .035em;
+    margin-left: 14px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.modal__main-feedbacks {
+    height: 90px;
+    overflow: auto;
+}
+
+.modal__input::placeholder, 
+.modal__textarea::placeholder,
+.feedback__list-content,
+.line {
+    color:#aeaeae; 
+}
+
+/* .line {
+    border-bottom: 1px solid #aeaeae; 
+} */
+
+#logo {
+    position: absolute;
+    width: 80px;
+    left: 6px;
+    bottom: 35px;
+    z-index: 20;
+}

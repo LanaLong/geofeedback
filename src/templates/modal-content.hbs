@@ -1,0 +1,29 @@
+<div class="modal" id="modal">
+    <div class="modal__header">
+        <span class="modal__header-inner">
+            <i class="fa fa-map-marker modal__header-marker"></i>
+            <span class="modal__header-text" id="modal-address"></span>
+            <i class="fa fa-times btn-close" id="btn-close"></i>
+        </span>
+    </div>
+    <div class="modal__main">
+        <div class="modal__main-feedbacks" id="feedbacks">
+            <ul class="feedback__list" id="feedbacks-list">
+            </ul>
+        </div>
+        <hr class="line">
+        <div class="modal__form">
+            <div class="modal__form-label">Ваш отзыв</div>
+            <form name="form">
+                <input type="text" id="inputName" name="name" placeholder="Ваше имя" class="modal__input" required="">
+                <input type="text" id="inputPlace" name="place" placeholder="Укажите место" class="modal__input"
+                    required="">
+                <textarea name="message" id="inputReview" placeholder="Поделитесь впечатлениями" class="modal__textarea"
+                    required=""></textarea>
+                <input type="submit" data-add="true" class="save__btn" id="btn" value="Добавить">
+                {{!-- <div id="logo"><img src="../src/img/logo.png"
+                        alt="Геоотзыв — выпускной проект #1 [Работа с API геолокационных карт]"></div> --}}
+            </form>
+        </div>
+    </div>
+</div>
